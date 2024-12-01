@@ -1,0 +1,131 @@
+* {
+    margin: 0;
+    padding: 0;
+    color: white;
+  }
+  
+  body {
+    background-color: rgb(56, 73, 105);
+    min-height: 100vh;
+    overflow: hidden;
+  }
+  
+  .app {
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  header {
+    margin: 4vh 0 10vh 0;
+  }
+  
+  .calculator {
+    border: 2px solid transparent;
+    text-align: center;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-radius: 8px;
+    background-color: rgb(28, 36, 56);
+  }
+
+  .screen {
+    overflow-x: scroll;
+    outline: 0;
+    border: none;
+    height: 9vmin;
+    width: 35.5vmin;
+    background-color: transparent;
+    border-radius: 8px;
+    margin: 5px 0 10px 0px;
+    text-align: right;
+    display: flex;
+    justify-content: start;
+    align-items: center;
+    padding: 0 15px 0 0px;
+    font-size: 1.5rem;
+    /* box-shadow: -5px -5px 18px rgba(107, 106, 106, 0.8); */
+  }
+  
+  .cal_btn {
+    /* width: 100%; */
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    /* grid-template-rows: repeat(5, auto); */
+    margin: 5px;
+    grid-gap: 15px;
+  }
+  
+  .item,.item7 {
+    position: relative;
+    font-size: 1.4rem;
+    height: 7vmin;
+    width: 7vmin;
+    border: 1px outset rgba(128, 128, 128, 0);
+    border-radius: 10%;
+    background-color: rgb(28, 36, 56);
+    box-shadow: -1px -1px 10px rgba(255, 255, 255, 0.1);
+  }
+  
+  .item:hover {
+    cursor: pointer;
+    background-color: rgb(15, 112, 141);
+    transition: background-color 0.2s ease;
+  }
+  #item:hover {
+  background-color: rgb(141, 15, 30)  ;
+  }
+  .item7:hover {
+    cursor: pointer;
+    background-color: rgb(15, 112, 141);
+    transition: background-color 0.2s ease;
+  }
+  
+  .item:active {
+    content: "";
+    background: rgb(171, 162, 149);
+    display: block;
+    position: relative;
+    padding-top: 100%;
+    padding-left: 100%;
+    margin-left: -20px !important;
+    margin-top: -120%;
+    opacity: 0;
+    transition: all 0.8s;
+  }
+  
+  .item:active:after {
+    padding: 0;
+    margin: 0;
+    opacity: 1;
+    transition: 0s;
+  }
+
+  
+
+  
+  @media screen and (max-width: 600px) {
+    .item {
+      height: 5vmax;
+      width: 5vmax;
+    }
+    .item2 {
+      height: 5vmax;
+      width: 5vmax;
+    }
+    .item7 {
+      height: 5vmax;
+      width: 5vmax;
+    }
+    .screen {
+      height: 5vmax;
+      width: 19vmax;
+      font-size: 1rem;
+    }
+  }
+  
