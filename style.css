@@ -8,6 +8,15 @@
     background-color: rgb(56, 73, 105);
     min-height: 100vh;
     overflow: hidden;
+    display: flex;
+    justify-content: center;
+  }
+
+  h1 {
+    position: absolute;
+    top: 5px;
+    left: 50%;
+    translate: -50%;
   }
   
   .app {
@@ -15,8 +24,9 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
+    
   }
+
   
   header {
     margin: 4vh 0 10vh 0;
@@ -28,10 +38,14 @@
     display: flex;
     justify-content: center;
     flex-direction: column;
-    align-items: center;
+    /* align-items: center; */
     padding: 10px;
     border-radius: 8px;
-    background-color: rgb(28, 36, 56);
+    background-color:  rgb(180, 205, 210);
+    position: absolute;
+    top: 23vmin;
+    left: 50%;
+    translate: -50%;
   }
 
   .screen {
@@ -68,21 +82,22 @@
     width: 7vmin;
     border: 1px outset rgba(128, 128, 128, 0);
     border-radius: 10%;
-    background-color: rgb(28, 36, 56);
-    box-shadow: -1px -1px 10px rgba(255, 255, 255, 0.1);
+    background-color: rgb(9, 123, 143);
+    box-shadow: -5px -5px 10px  rgba(47, 47, 47, 0.432);
   }
   
   .item:hover {
     cursor: pointer;
-    background-color: rgb(15, 112, 141);
+    background-color:  rgb(7, 84, 98);
     transition: background-color 0.2s ease;
   }
   #item:hover {
-  background-color: rgb(141, 15, 30)  ;
+  background-color: rgb(173, 11, 30);
+  /* transition: background-color 0.2s ease; */
   }
   .item7:hover {
     cursor: pointer;
-    background-color: rgb(15, 112, 141);
+    background-color:  rgb(7, 84, 98);
     transition: background-color 0.2s ease;
   }
   
@@ -109,23 +124,42 @@
   
 
   
-  @media screen and (max-width: 600px) {
+  @media screen and (max-width: 450px) {
     .item {
-      height: 5vmax;
-      width: 5vmax;
+      height: 8vmax;
+      width: 8vmax;
     }
     .item2 {
-      height: 5vmax;
-      width: 5vmax;
+      height: 8vmax;
+      width: 8vmax;
     }
     .item7 {
-      height: 5vmax;
-      width: 5vmax;
+      height: 8vmax;
+      width: 8vmax;
     }
     .screen {
-      height: 5vmax;
-      width: 19vmax;
-      font-size: 1rem;
+      height: 8vmax;
+      width: 39vmax;
+      font-size: 1.5rem;
     }
-  }
+    .calculator{
+      position: absolute;
+    top: 45vmin;
+    left: 50%;
+    translate: -50%;
+    }
   
+  }
+
+  .contact {
+    position: absolute;
+    top: 5vmin;
+    left: 5vmin;
+  }
+  .contact li {
+    padding: 10px;
+    list-style-type: none;
+    font-size: 1.5rem;
+  }
+
+

@@ -1,0 +1,130 @@
+/* THEME Green */
+.green {
+  background-color: rgba(172, 204, 166, 0.697);
+  box-shadow: -1px -1px 5px rgba(160, 122, 128, 0.705);
+}
+.greenBtn {
+  background-color: rgb(27, 143, 9);
+  box-shadow: -5px -5px 10px rgba(47, 47, 47, 0.432);
+}
+.greenClr {
+  color: rgb(29, 160, 9);
+  text-shadow: -1px -1px 2px rgb(0, 0, 0);
+}
+.greenBtn:hover {
+  background-color: rgb(18, 101, 5);
+}
+
+/* Red */
+.red {
+  background-color: rgba(204, 166, 166, 0.697);
+  box-shadow: -1px -1px 5px rgba(160, 122, 128, 0.705);
+}
+.redBtn {
+  background-color: rgb(160, 9, 85);
+  box-shadow: -5px -5px 10px rgba(47, 47, 47, 0.432);
+}
+.redClr {
+  color: rgba(200, 8, 53, 0.482);
+  text-shadow: -1px -1px 2px rgb(0, 0, 0);
+}
+.redBtn:hover {
+  background-color: rgb(124, 7, 66);
+}
+
+/* Blue */
+.blue {
+  background-color: rgb(184, 162, 199);
+  box-shadow: -1px -1px 5px rgba(160, 122, 128, 0.705);
+}
+.blueBtn {
+  background-color: rgb(97, 9, 160);
+  box-shadow: -5px -5px 10px rgba(47, 47, 47, 0.432);
+}
+.blueClr {
+  color: rgb(97, 9, 160);
+  text-shadow: -1px -1px 2px rgb(0, 0, 0);
+}
+.blueBtn:hover {
+  background-color: rgb(64, 6, 105);
+}
+
+@media screen and (max-width: 450px) {
+  .setting {
+    height: max-content;
+    width: 20vmax;
+    background-color: bisque;
+  }
+  .setting {
+    position: absolute;
+    top: 1vmax;
+    right: 1vmax;
+    translate: 15vmax;
+    transition: 0.5s ease-in;
+    z-index: 1;
+  }
+}
+.setting {
+  padding: 10px;
+  height: fit-content;
+  width: 8.5vmax;
+  background-color: rgb(184, 207, 216);
+  border-radius: 5px;
+}
+
+.theme {
+  translate: -11vmax;
+  transition: 0.5s ease-in;
+}
+.theme2 {
+  translate: 0.06vmax;
+}
+
+.setting {
+  position: absolute;
+  right: 1vmax;
+  translate: 15vmax;
+  transition: 0.5s ease-in;
+  z-index: 1;
+}
+.setting2 {
+  translate: -1vmax;
+}
+
+.cls {
+  padding: 7px 7px;
+  margin: 5px 5px;
+  height: 2vmax;
+  border-radius: 5px;
+}
+
+
+#cyan{
+  background-color: rgb(9, 123, 143);
+}
+#cyan:hover{
+  background-color: rgb(7, 84, 98);
+}
+
+#green {
+  background-color: rgb(27, 143, 9);
+}
+#green:hover{
+  background-color: rgb(18, 96, 6);
+}
+#red {
+  background-color: rgb(160, 9, 85);
+}
+#red:hover{
+  background-color: rgb(109, 7, 58);
+}
+#blue {
+  background-color: rgb(97, 9, 160);
+}
+#blue:hover{
+  background-color:rgb(66, 7, 108);
+}
+.clr {
+  display: grid;
+  grid-template-columns: repeat(2,4vmax);
+}
