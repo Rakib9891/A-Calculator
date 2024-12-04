@@ -81,11 +81,10 @@
 }
 
 .setting {
-  position: absolute;
+  position: fixed;
   right: 1vmax;
-  translate: 15vmax;
+  translate: 16vmax;
   transition: 0.5s ease-in;
-  z-index: 1;
 }
 .setting2 {
   translate: -1vmax;
@@ -126,5 +125,6 @@
 }
 .clr {
   display: grid;
-  grid-template-columns: repeat(2,4vmax);
+  grid-template-columns: repeat(2,4.2vmax);
 }
+

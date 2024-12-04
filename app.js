@@ -1,5 +1,5 @@
 const btns = document.querySelectorAll(".item");
-const del = document.querySelector(".item2");
+const del = document.querySelector("#item8");
 const evaluet = document.querySelector("#evaluet");
 let screen = document.querySelector(".screen");
 const clean = document.querySelector("#item");
@@ -17,12 +17,22 @@ btns.forEach((btn) => {
   btn.addEventListener("click", (e) => {
     string = string + e.target.innerHTML;
     screen.value = string;
+    if (e.target.innerHTML == "Del") {
+        // string = string + e.target.innerHTML;
+    string = string.slice(0, -4);
+    screen.value = string;
+    }
+   if ( screen.value == "") {
+      screen.value = "Nothing to delete"
+    }
   });
 
   clean.addEventListener("click", () => {
     string = "";
     screen.value = string;
   });
+
+
 
   evaluet.addEventListener("click", () => {
     try {
@@ -34,6 +44,11 @@ btns.forEach((btn) => {
     }
   });
 });
+
+// del.addEventListener("click", () => {
+//   string = string.slice(0, -1);
+//   screen.value = string;
+// });
 
 // setting part
 const theme = document.querySelector(".theme");
